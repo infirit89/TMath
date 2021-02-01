@@ -4,9 +4,11 @@
     <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Authors>OKAY</Authors>
-    <Version>1.0.0.2</Version>
-    <Copyright>2014-2021 OKAY</Copyright>
+    <Version>1.0.0.3</Version>
+    <Copyright>Copyright ©  2020 OKAY</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>A C# math library</Description>
+    <AssemblyName>TMath</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
