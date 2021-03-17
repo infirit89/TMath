@@ -15,11 +15,11 @@ namespace TMath
     {
         private static TRectangle m_EmptyRectangle = new TRectangle();
 
-        public float X;
-        public float Y;
+        public double X;
+        public double Y;
 
-        public float Width;
-        public float Height;
+        public double Width;
+        public double Height;
 
         public TVector2 Position
         {
@@ -43,10 +43,10 @@ namespace TMath
 
         public TRectangle(int x, int y, int width, int height)
         {
-            X = (int)x;
-            Y = (int)y;
-            Width = (int)width;
-            Height = (int)height;
+            X = x;
+            Y = y;
+            Width = width;
+            Height = height;
         }
 
         public TRectangle(float x, float y, float width, float height)
@@ -57,13 +57,21 @@ namespace TMath
             Height = height;
         }
 
-        public float Top => Y;
-        public float Bottom => (Y + Height);
+        public TRectangle(double x, double y, double width, double height)
+        {
+            X = x;
+            Y = y;
+            Width = width;
+            Height = height;
+        }
 
-        public float Left => X;
-        public float Right => (X + Width);
+        public double Top => Y;
+        public double Bottom => (Y + Height);
+               
+        public double Left => X;
+        public double Right => (X + Width);
 
-        public float GetEdge(Edge edge)
+        public double GetEdge(Edge edge)
         {
             switch (edge)
             {
